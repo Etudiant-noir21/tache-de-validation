@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     background-color: #444444;
     /* background: url(images/hero-6-cover.png); */
@@ -24,6 +25,7 @@ header{
    color: #fff;
    /* font-weight: 500; */
    background-color: #444444;
+   /* opacity: 0.98; */
    background: url(images/hero-6-cover.png);
    background-position: center;
    background-size: cover;
@@ -59,7 +61,7 @@ header nav a:nth-child(2){
 }
 
 header .contener{
-    padding-top: 3rem;
+    margin-top: 3rem;
     text-align: center;
     width: 30%;
     margin: auto;
@@ -70,23 +72,33 @@ header .contener{
  a{
    color:#0d99ff;
 }
+.online a{
+    color:#0d99ff;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 2rem;
+ }
 .join-us{
     padding: 2rem;
+    margin-bottom: 15rem;
 }
 .join-us a{
     background-color: #0d99ff;
     color: #fff;
     padding: 10px;
     border-radius: 10px;
+    font-weight: 600;
 }
 .online{
     padding: 2rem ;
 }
 header h1{
-    font-size: 3rem;
-    line-height: 3rem;
-    /* padding: 1.5rem; */
-    word-spacing: 10px;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    /* width: 100%; */
+    /* padding-top: 2rem; */
+   
 }
 header p{
     padding-top: 2rem;
@@ -95,12 +107,16 @@ header p{
     display: flex;
     gap: 3rem;
     justify-content: center;
-    /* margin-top: 2rem; */
+    position: absolute;
+     top: 110%;
+     
+     /* margin-top: 2rem; */
 }
 .training-course{
     padding: 10px 40px;
-    width: 20rem;
+    width: 15rem;
     background-color: #fff;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.20);
 }
 .training-course p{
     color: #444444;
@@ -110,6 +126,13 @@ hr{
     margin-top: 1rem;
     height: 5px;
     background-color: #e7040777;
+}
+.partie-1{
+    /* position: relative; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 .partie-2{
     background-color: #fff;
@@ -160,15 +183,21 @@ hr{
 }
 
 .lifetime{
-background-color: #0d99ff;
+background-color: #23a6f0;
 color: #fff;
 }
-.lifetime i{
-    color: #fff;
-    background-color: blue;
-    padding: 10px;
+.lifetime img{
+    /* color: #fff; */
+    background-color: #2A7CC7;
+    padding: 15px;
     font-size: 18px;
     border-radius: 10px;
+}
+.mbc img{
+    background-color: #FFDCD1;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px; 
 }
 .lifetime hr{
     background-color: #fff;
@@ -197,7 +226,7 @@ color: #fff;
 }
 
 .contener-3 .text-3 p{
-    padding-top: 10px;
+    /* padding-top: 10px; */
 width: 60%;
 }
 #inside-content{
@@ -218,13 +247,18 @@ width: 60%;
 .departement{
     width: 15%;
     font-size: 12px;
+
 }
 .departement h5{
     padding-bottom: 5px;
     font-size: 18px;
+    margin-top: 1rem;
 }
 .departement p{
     color: #444444;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+
 }
 .departement p span{
     color: green;
@@ -243,6 +277,22 @@ width: 60%;
 .english-dep{
     position: relative;
 }
+.english-dep img{
+    height: 20rem;
+}
+.english-dep .icons{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    
+}
+.icons img{
+width: 40px;
+height: 40px;
+background-color: #fff;
+padding: 10px;
+border-radius: 50%;
+}
 .icon-para p{
     position: absolute;
     top: 10%;
@@ -257,7 +307,7 @@ width: 60%;
 .icon-para .icons{
     position: absolute;
     bottom: 10%;
-    left: 20%;
+    left: 10%;
 }
 .icon-para .icons i{
     color: #444444;
@@ -265,8 +315,13 @@ width: 60%;
     padding: 5px;
     border-radius: 50%;
 }
+.text-3{
+    padding-bottom: 2rem;
+}
 .text-3 p{
     color: #444444;
+    font-size: 12px;
+    font-weight: 500;
 }
 .partie-4{
     background-color: #fff;
@@ -303,6 +358,9 @@ width: 60%;
     font-weight: 400;
     color: #444444;
 }
+.profil-infos p{
+    font-size: 12px;
+}
 .name{
     font-size: 18px;
     padding-top: 10px;
@@ -326,6 +384,8 @@ width: 60%;
 .text-4 p{
     color: #444444;
     padding-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
 }
 .partie-4 h2{
     font-size: 30px;
@@ -352,6 +412,8 @@ width: 60%;
     align-items: center;
     text-align: center;
     padding-left: 20rem;
+    font-size: 12px;
+    font-weight: 500;
 }
 .content-5 form{
     display: flex;
@@ -361,18 +423,18 @@ width: 60%;
 #email{
     width: 30rem;
     padding: 20px;
-    background-color: #ffffffb0;
+    background-color: #F9F9F9;
     /* box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.15); */
     border: 1px solid #897d7d67;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #submit{
-    padding: 10px;
-    background-color: #0d99ff;
+    padding: 8px;
+    background-color: #23A6F0;
     color: #fff;
     font-weight: 600;
     /* border: 1px solid #897d7d67; */
-    border-radius: 10px;
+    border-radius: 2px;
     border: none;
 }
 footer{
@@ -417,23 +479,43 @@ footer ul li{
     header{
         height: auto;
     }
+    
+    .content-header h2{
+        display: none;   
+    }
     .content-header{
-        width: 100%;
         display: flex;
-        padding: 2rem;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    header .contener h1{
+        font-size: 32px;
+        width: 100%;
     }
     header .contener{
         width: 100%;
         height: auto;
+        
     }
     .gradual{
+        padding-top: 5rem;
         width: 100%;
+        top: 0;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr ;
+        justify-content: center;
 
     }
+    .partie-1{
+        position: relative;
+    }
+    .training-course{
+        width: 100%;
+    }
+.join-us{
+    margin: 0;
+}
     .partie-2{
+        padding-top: 40rem;
         width: 100%;
         height: auto;
         /* padding: 0; */
@@ -501,7 +583,7 @@ footer ul li{
     .content-footer{
         padding: 5rem;
         width: 100%;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
          gap: 10px;
          place-items: start;
     }
@@ -519,11 +601,13 @@ footer ul li{
         width: 100%;
         height: auto; 
     }
-    .gradual {
-        padding-top: 3rem;
-        /* font-size: 1.5rem; */
+    .partie-1 {
+        position: absolute;
+        top: 65%;
     }
-  
+  .partie-2{
+    margin-top: 5rem;
+  }
     header .contener p{
         font-size: 1.5rem;
     }
