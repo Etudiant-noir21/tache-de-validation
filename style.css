@@ -504,6 +504,9 @@ footer{
         overflow-x: hidden;
         
     }
+    .absolute{
+        display: none;
+       }
     header{
         width: 100%;
         height: auto;
@@ -622,6 +625,7 @@ footer{
    header .contener{
     width: 100%;
    }
+   
    h1{
     font-size: 48px;
    }
