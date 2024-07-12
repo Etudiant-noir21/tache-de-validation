@@ -116,7 +116,14 @@ header h1{
     /* width: 542px; */
    
 }
-
+header h2{
+    color: #fff;
+}
+ .mbc img{
+    padding: 15px;
+    background-color: #FFDCD1;
+    border-radius: 10px;
+ }
 
                      /*  premiere partie */
 .partie-1{
